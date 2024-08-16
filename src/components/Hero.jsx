@@ -22,7 +22,7 @@ const Hero = () => {
     
     
   return (
-    <div className={Styles.hero}>
+    <div className={Styles.hero} id='home'>
         <div className={Styles.canva}>
         <Canvas draw={draw} width="1200" height="800" />
         <Canvas draw={draw2} width="1200" height="800" />
@@ -32,9 +32,11 @@ const Hero = () => {
         Hello I am <span className={Styles.name}>Melika</span>
         </div>
         <div className={Styles.headingtwo}>
-       I'm Front end devel<span className={Styles.name}>oper.</span>
+       I'm a Front end deve<span className={Styles.name}>loper.</span>
         </div>
-        <button className={Styles.btn}>View my works</button>
+        <button className={Styles.btn}><a href='#Projects'>View my works
+            
+            </a></button>
      </header>
     </div>
   )
