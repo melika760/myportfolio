@@ -23,11 +23,13 @@ position: relative;
 .content{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .profile{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
 }
 .profilecontent{
@@ -71,6 +73,18 @@ position: relative;
     background-clip: content-box, border-box;
     transition: transform 0.2s, opacity 1.2s;
     overflow: hidden;}
+    .skills__item img{
+        overflow: clip;
+        height: 60%;
+        width: 40%;
+    }
+    .skillname{
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600px;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
 
 @media (max-width: 1000px) {
     .skills__item {
