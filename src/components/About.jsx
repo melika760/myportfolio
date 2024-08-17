@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Styles from "./About.module.css"
 import me from "../assets/profile.png"
 import Js from "../assets/JS.png"
@@ -6,48 +6,90 @@ import HTML from "../assets/HTML.png"
 import CSS from "../assets/CSS.png"
 import reacts from "../assets/react.png"
 import next from "../assets/Next.png"
+import Git from "../assets/Git.png"
+import Firebase from "../assets/Firebase.png"
+import Strapi from "../assets/Strapi.png"
+import Tailwind from "../assets/Tailwind.png"
+import Bootstrap from "../assets/bootstrap.png"
 const About = () => {
+    const[isVisible,setIsvisible]=useState(false)
+    const aboutSectionRef=useRef()
+    useEffect(()=>{
+        const observer = new IntersectionObserver(
+            (entries) => {
+              const entry = entries[0];
+              if (entry.isIntersecting) {
+                setIsvisible(true);
+                observer.unobserve(entry.target); 
+              }
+            },
+            { threshold: 0.3 } 
+          );
+          const currentref=aboutSectionRef.current
+          if (currentref) {
+            observer.observe(currentref);
+          }
+      
+          return () => {
+            if (currentref) {
+              observer.unobserve(currentref);
+            }
+          };
+
+    },[])
+    const skillitem1=[
+        {name:"HTML",image:HTML},
+        {name:"CSS",image:CSS},
+        {name:"JavaScript",image:Js},
+    ]
+    const skillitem2=[
+        {name:"React",image:reacts},
+        {name:"NextJs",image:next},
+        {name:"Git",image:Git},
+        {name:"Bootstrap",image:Bootstrap},
+    ]
+    const skillitem3=[
+        {name:"Firebase",image:Firebase},
+        {name:"Strapi",image:Strapi},
+        {name:"Tailwind",image:Tailwind}
+    ]
+    const getRandomDelay = () => {
+        return Math.random() * 1.5;
+      };
+const renderrows=(skill)=>{
+return(<div className={Styles.rows}>
+{skill.map((skil,index)=>{
+    const randomnum=Math.random()>0.5;
+    const delay=randomnum?`${getRandomDelay()}s`:"0s";
+    let change=false
+    if(skil.name==="Tailwind" ||skil.name==="Strapi"|| skil.name==="Bootstrap"|| skil.name==="NextJs"){
+change=true
+    }
+    return(
+        <div className={`${Styles.skills__item} ${isVisible?Styles.fadeto:""}`} style={{transitionDelay:delay}} key={index}>
+        <img src={skil.image} alt={skil.name} className={change?Styles.rounded:""}/>
+        <div className={Styles.skillname}>{skil.name}</div>
+    </div>
+    )
+})}
+</div>)
+}
   return (
-    <section id='About' className={Styles.about}>
+    <section id='About' className={Styles.about} ref={aboutSectionRef}>
 <h2>About</h2>
 <section className={Styles.content}>
-<div className={Styles.profile}>
-<div className={Styles.profilepic}>
-<img src={me} width="70%" alt='Profilepic'/>
+<div className={`${Styles.profile} ${isVisible?Styles.fadein:""}`}>
+<div className={Styles.profilepics}>
+<img src={me} width="55%" alt='Profilepic' className={Styles.profilepic}/>
 </div>
 <p className={Styles.profilecontent}>
-Fully committed to the philosophy of life-long learning, I’m a full stack developer with a deep passion for JavaScript, React and all things web development. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. When I’m not at my computer I like to spend my time reading, keeping fit and playing guitar.
+I’m a front end developer with an endless curiosity and a serious love affair with JavaScript, React, and all things web. The thrill of combining creativity, logic, and technology—plus the fact that there’s always something new to learn—keeps me hooked on web development. Lifelong learning is my jam, and I’m fully committed to riding this exciting wave of discovery every day!
 </p>
 </div>
 <div className={Styles.skills}>
-<div className={Styles.rows}>
-<div className={Styles.skills__item}>
-    <img src={HTML} alt='HTML'/>
-    <div className={Styles.skillname}>HTML</div>
-</div>
-<div className={Styles.skills__item}>
-    <img src={CSS} alt='CSS'/>
-    <div className={Styles.skillname}>CSS</div>
-</div>
-<div className={Styles.skills__item}>
-    <img src={Js} alt='JavaScript'/>
-    <div className={Styles.skillname}>JavaScript</div>
-</div>
-</div>
-<div className={Styles.rows}>
-<div className={Styles.skills__item}>
-    <img src={reacts} alt='React'/>
-    <div className={Styles.skillname}>React</div>
-</div>
-<div className={Styles.skills__item}>
-    <img src={next} alt='Next'/>
-    <div className={Styles.skillname}>Next.Js</div>
-</div>
-<div className={Styles.skills__item}>
-    <img src={Js} alt='JavaScript'/>
-    <div className={Styles.skillname}>JavaScript</div>
-</div>
-</div>
+{renderrows(skillitem1)}
+{renderrows(skillitem2)}
+{renderrows(skillitem3)}
 </div>
 </section>
     </section>
