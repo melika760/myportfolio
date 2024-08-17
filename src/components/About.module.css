@@ -11,6 +11,8 @@
 color: white;
 font-size: 3rem;
 position: relative;
+margin-bottom: 10rem;
+margin-top: 10rem;
 }
 .about h2::before{
     content: "";
@@ -32,7 +34,7 @@ position: relative;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    left: -300px;
+    
     transform: translateX(-300px);
     transition: transform 1.2s;
 
@@ -96,7 +98,7 @@ position: relative;
 }
  .skills__item img{
         overflow: clip;
-        height: 60%;
+        height:50px;
         width: auto;
         transition: all 0.3s;
     }
@@ -116,14 +118,27 @@ position: relative;
     .skills__item {
         height: 80px;
         width: 130px;
+      
+    }
+    .profile{
+        transform: translateX(0);
+        margin-bottom: 3rem;
+      
     }
     .content{
         flex-direction: column;
+    }
+    .about h2{
+        font-size: 3rem;
+       
     }
 }
 @media (max-width: 1300px) {
     .skills__item {
         border-width: 2px;
+    }
+    .about{
+        width: auto;
     }
 }
 @media (max-width: 1500px) {

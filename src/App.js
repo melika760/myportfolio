@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
-
+import { Context } from './Store/Context';
 function App() {
+  const[section,setsection]=useState("home")
   return (
-    <div className="App">
+  <Context.Provider value={{section,setsection}}>
+    
     <Hero/>
     <Nav/>
 <main>
@@ -14,7 +17,8 @@ function App() {
   <Projects/>
   <Contact/>
 </main>
-    </div>
+  </Context.Provider>
+ 
   );
 }
 

@@ -1,7 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./Nav.module.css"
+import useCurrent from './useCurrent'
 const Nav = () => {
     const[activeNav,setActiveNav]=useState("home")
+    const{section}=useCurrent()
+    useEffect(()=>{
+        if(section==="About"){
+            setActiveNav("About")
+        }if(section==="home"){
+            setActiveNav("home")
+        }
+    },[activeNav,section])
+   
     const handleclick=(nav)=>{
 setActiveNav(nav)
     }

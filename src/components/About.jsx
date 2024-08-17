@@ -11,9 +11,11 @@ import Firebase from "../assets/Firebase.png"
 import Strapi from "../assets/Strapi.png"
 import Tailwind from "../assets/Tailwind.png"
 import Bootstrap from "../assets/bootstrap.png"
+import useCurrent from './useCurrent'
 const About = () => {
     const[isVisible,setIsvisible]=useState(false)
     const aboutSectionRef=useRef()
+    const {setsection}=useCurrent()
     useEffect(()=>{
         const observer = new IntersectionObserver(
             (entries) => {
@@ -21,6 +23,7 @@ const About = () => {
               if (entry.isIntersecting) {
                 setIsvisible(true);
                 observer.unobserve(entry.target); 
+                setsection("About")
               }
             },
             { threshold: 0.3 } 
@@ -36,7 +39,7 @@ const About = () => {
             }
           };
 
-    },[])
+    },[setsection])
     const skillitem1=[
         {name:"HTML",image:HTML},
         {name:"CSS",image:CSS},
@@ -62,7 +65,7 @@ return(<div className={Styles.rows}>
     const randomnum=Math.random()>0.5;
     const delay=randomnum?`${getRandomDelay()}s`:"0s";
     let change=false
-    if(skil.name==="Tailwind" ||skil.name==="Strapi"|| skil.name==="Bootstrap"|| skil.name==="NextJs"){
+    if(skil.name==="Tailwind" ||skil.name==="Strapi"|| skil.name==="Bootstrap"|| skil.name==="NextJs"||skil.name==="Firebase"){
 change=true
     }
     return(

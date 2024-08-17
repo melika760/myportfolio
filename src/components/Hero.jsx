@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from "./Hero.module.css"
 import Canvas from './UI/Canvas'
-const Hero = () => {
+const Hero = () => {  
     const draw = (context,count) => {
         context.clearRect(0, 0, context.canvas.width, context.canvas.height)
         context.fillStyle = 'purple'
