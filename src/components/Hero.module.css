@@ -61,10 +61,14 @@ animation-name: movetoright;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
 }
 .btn:hover{
-    box-shadow: 0px 0px 10px white,
+    box-shadow: 0px 0px 10px white;
+    color:white
 }
 .btn a{
     text-decoration: none;
+    color: white;
+}
+.btn a:hover{
     color: white;
 }
 @keyframes movetoleft {
