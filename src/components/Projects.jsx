@@ -24,7 +24,7 @@ const Projects = () => {
 <h3 className={styles.title}>Dominiques' Cafe</h3>
 <p className={styles.descriptions}>Full stack social media application built with React, Node.js, Express.js, MongoDB, Socket.io and AWS S3</p>
 
-{/* <a href='/'><div className={styles.live1}>Live app</div></a> */}
+<a href='/'><div className={styles.live1}>Live app</div></a>
 <a href='/'>Learn more</a>
 
 

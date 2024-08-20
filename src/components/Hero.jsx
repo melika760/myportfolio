@@ -32,7 +32,7 @@ const Hero = () => {
         Hello I am <span className={Styles.name}>Melika</span>
         </div>
         <div className={Styles.headingtwo}>
-       I'm a Front end deve<span className={Styles.name}>loper.</span>
+       I'm a Front end <span className={Styles.name}>developer.</span>
         </div>
         <button className={Styles.btn}><a href='#Projects'>View my works
             
