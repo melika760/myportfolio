@@ -31,34 +31,62 @@ display: flex;
 position: relative;
 justify-content: flex-start;
 margin-bottom: 14rem;
-margin-left: 11rem;
+
 }
-.pic{
-    height:28rem;
+.left{
+    margin-left: 11rem;
+}
+.right{
+    margin-right: 11rem;
+}
+.pic2{
+    justify-content: flex-end;
+    
+}
+.pic,.pic2{
+    height:34rem;
     width: 60rem;
     position: relative;
-    background-color: #4F1787;
+    background-color: #694F8E;
     cursor: pointer;
     transform: scale(100%);
     transition: all 0.2s;
     display: flex;
     align-items: center;
+    border-radius: 4px;
+}
+.pic{
     justify-content: flex-start;
 }
-.pic:hover{
+.pic:hover,.pic2:hover{
 transform: scale(95%);
 }
-.image{
-    width: 95%;
+.image,.image2{
+    width: 80%;
     position: relative;
+    background-color: #B692C2;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+.image{
+    justify-content: flex-start;
+}
+.image2{
+    justify-content: flex-end;
+}
+.image2 img{
+    width: 85%;
+    border-radius: 2px;
 }
 .image img{
     width: 85%;
+    border-radius: 2px;
 }
-.info{
+.info,.info2{
     position: relative;
-    left: -9rem;
-    margin-right: -2rem;
     color: white;
     font-family: "Roboto";
     width: fit-content;
@@ -68,42 +96,62 @@ transform: scale(95%);
     height: fit-content;
 
 }
+.info{
+    left: -8rem;
+    margin-right: -2rem;
+}
+.info2{
+    right: -18rem;
+    margin-left: -2rem;
+}
 .title{
-    font-size: 2.5rem
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 .description{
     margin-top: 3rem;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Roboto';
 }
 
-.info a{
+ a{
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .live1{
+    color: white;
+    font-weight: 600;
 display: flex;
 background-color: transparent;
 flex-direction: column;
 justify-content: center;
 letter-spacing: 3px;
 font-size: 1.2rem;
-padding: 1rem 1.2rem;
+padding: 1rem 0.8rem;
 position: relative;
 line-height: 1;
 text-transform: uppercase;
 align-items: center;
 width: 13rem;
+margin-bottom: 1.4rem;
+
 }
-.live1::before{
+.live1::after{
     content: "";
     position: absolute;
-    border-bottom: 2px solid purple;
-    width: 7rem;
-    top:2.5rem
+   background-color:#E3A5C7;
+   transform-origin: bottom;
+   bottom: 2px;
+   height: 3px;
+   width: 80%;
+   display: block;
+   z-index: -1;
 }
 .live1:hover{
-background-color: purple;
-transition: all 0.2s;
+background-color: #E3A5C7;
+transition: all 0.9s;
+color: inherit;
+color: #1a1a1a;
 }
