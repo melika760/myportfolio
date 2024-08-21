@@ -86,7 +86,7 @@ change=true
 <img src={me} width="55%" alt='Profilepic' className={Styles.profilepic}/>
 </div>
 <p className={Styles.profilecontent}>
-I’m a front end developer with an endless curiosity and a serious love affair with JavaScript, React, and all things web. The thrill of combining creativity, logic, and technology—plus the fact that there’s always something new to learn—keeps me hooked on web development. Lifelong learning is my jam, and I’m fully committed to riding this exciting wave of discovery every day!
+Driven by a lifelong commitment to learning, I'm a passionate front-end developer specializing in JavaScript, React, and cutting-edge web technologies. The intersection of creativity, user experience, and technical proficiency fuels my enthusiasm for crafting visually stunning and intuitive interfaces. I thrive on the constant evolution of the web development landscape and am always eager to explore new tools and techniques to deliver exceptional digital experiences.
 </p>
 </div>
 <div className={Styles.skills}>

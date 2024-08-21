@@ -36,6 +36,7 @@
     font-size: 6rem;
     animation-duration: 2.4s;
     animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+ 
     
 }
 .headingone{
@@ -45,11 +46,11 @@
 animation-name: movetoright;
 }
 .name{
-    color:#C738BD;
+    color:#86469C;
 }
 .btn{
-    background-color: purple;
-    border: 1px solid purple;
+    background-color: #86469C;
+    border: 1px solid #86469C;
     text-decoration: none;
     color: white;
     border-radius: 4px;

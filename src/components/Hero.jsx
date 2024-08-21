@@ -4,7 +4,7 @@ import Canvas from './UI/Canvas'
 const Hero = () => {  
     const draw = (context,count) => {
         context.clearRect(0, 0, context.canvas.width, context.canvas.height)
-        context.fillStyle = 'purple'
+        context.fillStyle = '#694F8E'
         const d = count % 800
         context.fillRect(10+d  , 10 , 100 , 100)
         context.fillRect(10 +d , 10+d , 10-2*d , 10+d)
@@ -12,7 +12,7 @@ const Hero = () => {
       }
       const draw2 = (context,count) => {
         context.clearRect(0, 0, context.canvas.width, context.canvas.height)
-        context.fillStyle = 'white'
+        context.fillStyle = '#E3A5C7'
         const d = count % 800
         context.fillRect(10+d  , 10 , 100 , 100)
         context.fillRect(10+d , 10 +d, 10-2*d , 10+d)
@@ -32,7 +32,7 @@ const Hero = () => {
         Hello I am <span className={Styles.name}>Melika</span>
         </div>
         <div className={Styles.headingtwo}>
-       I'm a Front end <span className={Styles.name}>developer.</span>
+       I'm a Front end developer.
         </div>
         <button className={Styles.btn}><a href='#Projects'>View my works
             
