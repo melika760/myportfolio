@@ -7,6 +7,15 @@ import Projects from './components/Projects';
 import { Context } from './Store/Context';
 function App() {
   const[section,setsection]=useState("home")
+
+  const SendMessage=async(UserData)=>{
+    await fetch("https://freight-53981-default-rtdb.europe-west1.firebasedatabase.app/Request.json",{
+      method:"POST",
+      body:JSON.stringify({
+        use:UserData
+      })
+    })
+  }
   return (
   <Context.Provider value={{section,setsection}}>
     
@@ -15,7 +24,7 @@ function App() {
 <main>
   <About/>
   <Projects/>
-  <Contact/>
+  <Contact onConfirm={SendMessage}/>
 </main>
   </Context.Provider>
  

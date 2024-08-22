@@ -45,7 +45,7 @@ margin-bottom: 14rem;
 }
 .pic,.pic2{
     height:34rem;
-    width: 60rem;
+    width: 65rem;
     position: relative;
     background-color: #694F8E;
     cursor: pointer;
@@ -101,7 +101,7 @@ transform: scale(95%);
     margin-right: -2rem;
 }
 .info2{
-    right: -18rem;
+    right: -12rem;
     margin-left: -2rem;
 }
 .title{
@@ -154,4 +154,45 @@ background-color: #E3A5C7;
 transition: all 0.9s;
 color: inherit;
 color: #1a1a1a;
+}
+@media (max-width: 1024px) {
+    .head {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        margin-bottom: 5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .pic, .pic2 {
+        max-width: 35rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
+    }
+
+    .pic, .pic2 {
+        max-width: 30rem;
+    }
 }

@@ -1,16 +1,38 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import useCurrent from './useCurrent'
 import styles from "./Projects.module.css"
 import Dominique from "../assets/Dominiques.png"
 import Grocery from "../assets/GroceryStore.png"
 import Dictionary from "../assets/Dictionary.png"
+import Weatherapp from "../assets/Weatherapp.png"
 const Projects = () => {
   const{setsection}=useCurrent()
+  const projectref=useRef()
   useEffect(()=>{
-    setsection("Projects")
-  },[setsection])
+    const observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          if (entry.isIntersecting) {
+            observer.unobserve(entry.target); 
+            setsection("Projects")
+          }
+        },
+        { threshold: 0.3 } 
+      );
+      const currentref=projectref.current
+      if (currentref) {
+        observer.observe(currentref);
+      }
+  
+      return () => {
+        if (currentref) {
+          observer.unobserve(currentref);
+        }
+      };
+
+},[setsection])
   return (
-    <section id='Projects' className={styles.projects}>
+    <section id='Projects' className={styles.projects} ref={projectref}>
       <h2 className={styles.head}>Projects</h2>
       <div className={styles.contents}>
         <div className={`${styles.content} ${styles.left}`}>
@@ -68,6 +90,24 @@ const Projects = () => {
 
 
           </div>
+        </div>
+        <div className={`${styles.content} ${styles.right}`}>
+          <div className={styles.info2}>
+<h3 className={styles.title}>Weather App</h3>
+<p className={styles.descriptions}>Full stack Weather app built with React and Axios</p>
+
+<a href='https://fanciful-bublanina-8bd2c6.netlify.app/' target='__blank' alt="WeatherApp"><div className={styles.live1}>Live app</div></a>
+<a href='/'><div className={styles.live1}>Learn more</div></a>
+
+
+          </div>
+          <a href='https://fanciful-bublanina-8bd2c6.netlify.app/' alt="WeatherApp" target='__blank'>
+          <div className={styles.pic2}>
+          <div className={styles.image2}>
+            <img src={Weatherapp} alt='Weatherapp'/>
+          </div>
+          </div>
+          </a>
         </div>
       </div>
     </section>

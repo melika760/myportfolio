@@ -10,6 +10,9 @@ const Nav = () => {
         }if(section==="home"){
             setActiveNav("home")
         }
+        if(section==="Projects"){
+            setActiveNav("Projects")
+        }
     },[activeNav,section])
    
     const handleclick=(nav)=>{
