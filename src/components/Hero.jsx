@@ -14,6 +14,7 @@ const Hero = () => {
         context.clearRect(0, 0, context.canvas.width, context.canvas.height)
         context.fillStyle = '#E3A5C7'
         const d = count % 800
+        
         context.fillRect(10+d  , 10 , 100 , 100)
         context.fillRect(10+d , 10 +d, 10-2*d , 10+d)
         context.fillRect(10+d  , 10 , 10+d , 100)

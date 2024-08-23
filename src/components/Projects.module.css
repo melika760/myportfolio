@@ -156,43 +156,52 @@ color: inherit;
 color: #1a1a1a;
 }
 @media (max-width: 1024px) {
-    .head {
-        font-size: 2.5rem;
-    }
 
     .content {
         margin-bottom: 5rem;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .description {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
-    .pic, .pic2 {
+    .pic,.pic2{
+        height:30rem;
         max-width: 35rem;
+       
+    }
+    .left{
+        margin-left: 0rem;
+    }
+    .right{
+        margin-right: 0rem;
+    }
+    .image,.image2{
+        height: 20rem;
+    }
+    .info,.info2{
+        top:3rem;
+       
+    
+    }
+    .live1{
+    font-size: 1rem;
+    padding:0.5rem;
+    margin-bottom: 1rem;
+    left: 0;
+    }
+    .info{
+        left: -6.3rem;
+        margin-right: -2rem;
+    }
+    .info2{
+        right:-9.3rem;
+        margin-left: -2rem;
     }
 }
 
-@media (max-width: 768px) {
-    .head {
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        margin-top: 3rem;
-    }
 
-    .title {
-        font-size: 1.8rem;
-    }
-
-    .description {
-        font-size: 1.4rem;
-    }
-
-    .pic, .pic2 {
-        max-width: 30rem;
-    }
-}

@@ -120,6 +120,10 @@ margin-top: 10rem;
         width: 130px;
       
     }
+    .about{
+        width: auto;
+        padding: 0 2rem;
+    }
     .profile{
         transform: translateX(1rem);
         margin-bottom: 3rem;
@@ -147,3 +151,4 @@ margin-top: 10rem;
         width: 145px;
     }
 }
+ 

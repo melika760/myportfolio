@@ -97,11 +97,11 @@ animation-name: movetoright;
         font-size: 3rem;
     }
     .name{
-        color:rgb(238, 131, 246);
+        color:#E3A5C7;
     }
     .btn{
         background-color:transparent;
-        border: 5px solid rgb(238, 131, 246);
+        border: 2px solid #E3A5C7;
         box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
     }
 }
