@@ -27,6 +27,7 @@ const Projects = () => {
       return () => {
         if (currentref) {
           observer.unobserve(currentref);
+
         }
       };
 

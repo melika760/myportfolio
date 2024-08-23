@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import { Context } from './Store/Context';
+import Footer from './components/Footer';
 function App() {
   const[section,setsection]=useState("home")
 
@@ -26,6 +27,7 @@ function App() {
   <Projects/>
   <Contact onConfirm={SendMessage}/>
 </main>
+<Footer/>
   </Context.Provider>
  
   );
