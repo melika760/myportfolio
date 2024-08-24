@@ -11,11 +11,9 @@ import Firebase from "../assets/Firebase.png"
 import Strapi from "../assets/Strapi.png"
 import Tailwind from "../assets/Tailwind.png"
 import Bootstrap from "../assets/bootstrap.png"
-import useCurrent from './useCurrent'
 const About = () => {
     const[isVisible,setIsvisible]=useState(false)
     const aboutSectionRef=useRef()
-    const {setsection}=useCurrent()
     useEffect(()=>{
         const observer = new IntersectionObserver(
             (entries) => {
@@ -23,7 +21,6 @@ const About = () => {
               if (entry.isIntersecting) {
                 setIsvisible(true);
                 observer.unobserve(entry.target); 
-                setsection("About")
               }
             },
             { threshold: 0.3 } 
@@ -31,6 +28,7 @@ const About = () => {
           const currentref=aboutSectionRef.current
           if (currentref) {
             observer.observe(currentref);
+            
           }
       
           return () => {
@@ -39,7 +37,7 @@ const About = () => {
             }
           };
 
-    },[setsection])
+    },[])
     const skillitem1=[
         {name:"HTML",image:HTML},
         {name:"CSS",image:CSS},
@@ -79,7 +77,7 @@ change=true
 }
   return (
     <section id='About' className={Styles.about} ref={aboutSectionRef}>
-<h2>About</h2>
+<h2 className={Styles.header}>About</h2>
 <section className={Styles.content}>
 <div className={`${Styles.profile} ${isVisible?Styles.fadein:""}`}>
 <div className={Styles.profilepics}>

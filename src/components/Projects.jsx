@@ -1,39 +1,13 @@
-import React, { useEffect, useRef } from 'react'
-import useCurrent from './useCurrent'
+import React from 'react'
 import styles from "./Projects.module.css"
 import Dominique from "../assets/Dominiques.png"
 import Grocery from "../assets/GroceryStore.png"
 import Dictionary from "../assets/Dictionary.png"
 import Weatherapp from "../assets/Weatherapp.png"
 const Projects = () => {
-  const{setsection}=useCurrent()
-  const projectref=useRef()
-  useEffect(()=>{
-    const observer = new IntersectionObserver(
-        (entries) => {
-          const entry = entries[0];
-          if (entry.isIntersecting) {
-            observer.unobserve(entry.target); 
-            setsection("Projects")
-          }
-        },
-        { threshold: 0.3 } 
-      );
-      const currentref=projectref.current
-      if (currentref) {
-        observer.observe(currentref);
-      }
-  
-      return () => {
-        if (currentref) {
-          observer.unobserve(currentref);
 
-        }
-      };
-
-},[setsection])
   return (
-    <section id='Projects' className={styles.projects} ref={projectref}>
+    <section id='Projects' className={styles.projects}>
       <h2 className={styles.head}>Projects</h2>
       <div className={styles.contents}>
         <div className={`${styles.content} ${styles.left}`}>

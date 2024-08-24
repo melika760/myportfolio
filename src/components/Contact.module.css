@@ -45,6 +45,7 @@ outline: none;
 color: white;
 font-size: 1rem;
 font-family: 'Roboto';
+border-radius: 4px;
 }
 .message{
     height: 8rem;
@@ -79,10 +80,42 @@ color: #E3A5C7;
     border-left: 2px solid #E3A5C7;
 }
 @media(max-width: 1000px){
-    .description{
-        font-size: 1rem;
-    }
+   
     .form{
         width: 50%;
     }
+    .header {
+        font-size: 2rem;
+        margin-top: 6rem;
+      }
+    
+      .header::before {
+        width: 7rem;
+        left: 2rem;
+        top: 1.75rem;
+      }
+    .description {
+        font-size: 0.9rem;
+        width: 90%;
+      }
+    
+      .inpt, .message {
+        width: 300px;
+        font-size: 0.9rem;
+        padding: 0.75rem;
+      }
+    
+      .message {
+        height: 6rem;
+      }
+    
+      .btn {
+        width: 50%;
+        font-size: 0.9rem;
+        align-self: center;
+      }
+    
+      .error {
+        font-size: 0.8rem;
+      }
 }

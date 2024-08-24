@@ -35,9 +35,9 @@ const Hero = () => {
         <div className={Styles.headingtwo}>
        I'm a Front end developer.
         </div>
-        <button className={Styles.btn}><a href='#Projects'>View my works
+        <a href='#Projects'> <button className={Styles.btn}>View my works
             
-            </a></button>
+            </button></a>
      </header>
     </div>
   )

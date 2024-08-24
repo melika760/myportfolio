@@ -55,7 +55,7 @@ setsubmited(true)
   </label>
   <label htmlFor='Message'>
     <textarea className={ `${styles.message} && ${MessageHasError?styles.er:""}`} placeholder='Message'value={Message} onChange={MessageChange} onBlur={MessageBlur}></textarea>
-    {MessageHasError && <p className={styles.error}>Please enter your email.</p>}
+    {MessageHasError && <p className={styles.error}>Please enter your message.</p>}
   </label>
   {submited && <p className={styles.error}>Your message is submited!</p>}
   <button type='submit'className={styles.btn} disabled={!NameIsValid && !EmailIsValid && !MessageIsValid}>Submit</button>

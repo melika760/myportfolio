@@ -62,9 +62,9 @@ margin-bottom: 14rem;
 transform: scale(95%);
 }
 .image,.image2{
-    width: 80%;
+    width: 90%;
     position: relative;
-    background-color: #B692C2;
+    /* background-color: #B692C2; */
     height: 28rem;
     display: flex;
     align-items: center;
@@ -78,11 +78,11 @@ transform: scale(95%);
     justify-content: flex-end;
 }
 .image2 img{
-    width: 85%;
+    width: 95%;
     border-radius: 2px;
 }
 .image img{
-    width: 85%;
+    width: 95%;
     border-radius: 2px;
 }
 .info,.info2{
