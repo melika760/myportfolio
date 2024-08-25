@@ -47,6 +47,7 @@ a:hover{
 @media(max-width: 768px){
     .navigationbar{
         justify-content: center;
+        height: 4rem;
       
     }
     .navItems{

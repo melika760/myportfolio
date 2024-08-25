@@ -9,7 +9,6 @@ const Projects = () => {
   return (
     <section id='Projects' className={styles.projects}>
       <h2 className={styles.head}>Projects</h2>
-      <div className={styles.contents}>
         <div className={`${styles.content} ${styles.left}`}>
           <a href='https://dominique-5aac4.web.app/' alt="Dominiques" target='__blank'>
           <div className={styles.pic}>
@@ -24,7 +23,7 @@ const Projects = () => {
 <p className={styles.descriptions}>Full stack resturant website built with React,CSS Module,React-router,Firebase</p>
 
 <a href='https://dominique-5aac4.web.app/' target='__blank' alt="Domique's Cafe"><div className={styles.live1}>Live app</div></a>
-<a href='/'><div className={styles.live1}>Learn more</div></a>
+<a href='https://github.com/melika760/OrderCheck' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
@@ -35,7 +34,7 @@ const Projects = () => {
 <p className={styles.descriptions}>Full stack Groccery store  built with Nextjs,Tailwind CSS,Strapi</p>
 
 <a href='https://groceryshop-three.vercel.app/' target='__blank' alt="GroceryStore"><div className={styles.live1}>Live app</div></a>
-<a href='/'><div className={styles.live1}>Learn more</div></a>
+<a href='https://github.com/melika760/newNextJsProject' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
@@ -61,7 +60,7 @@ const Projects = () => {
 <p className={styles.descriptions}>Full stack Dictionary website built with React and Axios</p>
 
 <a href='https://musical-sorbet-7120c3.netlify.app/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
-<a href='/'><div className={styles.live1}>Learn more</div></a>
+<a href='https://github.com/melika760/Dictionary' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
@@ -72,7 +71,7 @@ const Projects = () => {
 <p className={styles.descriptions}>Full stack Weather app built with React and Axios</p>
 
 <a href='https://fanciful-bublanina-8bd2c6.netlify.app/' target='__blank' alt="WeatherApp"><div className={styles.live1}>Live app</div></a>
-<a href='/'><div className={styles.live1}>Learn more</div></a>
+<a href='https://github.com/melika760/vanilla-weather-app' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
@@ -84,7 +83,7 @@ const Projects = () => {
           </div>
           </a>
         </div>
-      </div>
+    
     </section>
   )
 }
