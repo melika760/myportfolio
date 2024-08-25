@@ -21,7 +21,7 @@ const Projects = () => {
           
           <div className={styles.info}>
 <h3 className={styles.title}>Dominiques' Cafe</h3>
-<p className={styles.descriptions}>Full stack resturant website built with React,React-router,CSS Module,Firebase</p>
+<p className={styles.descriptions}>Full stack resturant website built with React,CSS Module,React-router,Firebase</p>
 
 <a href='https://dominique-5aac4.web.app/' target='__blank' alt="Domique's Cafe"><div className={styles.live1}>Live app</div></a>
 <a href='/'><div className={styles.live1}>Learn more</div></a>

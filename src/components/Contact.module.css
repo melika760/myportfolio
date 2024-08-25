@@ -79,7 +79,7 @@ color: #E3A5C7;
 .er{
     border-left: 2px solid #E3A5C7;
 }
-@media(max-width: 1000px){
+@media(max-width: 1024px){
    
     .form{
         width: 50%;
@@ -96,7 +96,7 @@ color: #E3A5C7;
       }
     .description {
         font-size: 0.9rem;
-        width: 90%;
+        width: 50%;
       }
     
       .inpt, .message {
@@ -110,12 +110,19 @@ color: #E3A5C7;
       }
     
       .btn {
-        width: 50%;
+        width: 30%;
         font-size: 0.9rem;
-        align-self: center;
+    
       }
     
       .error {
         font-size: 0.8rem;
       }
+}
+@media(max-width: 768px){
+  .btn {
+    width: 50%;
+    font-size: 0.9rem;
+    align-self: center;
+  }
 }

@@ -164,7 +164,7 @@ margin-top: 10rem;
         padding: 0 1rem;
     }
     .skills__item {
-        height: 60px;
+        height: 80px;
         width: 100px;
         
     }
@@ -174,5 +174,11 @@ margin-top: 10rem;
     }
     .skills__item img{
         height: 40px;
+    }
+    .rows{
+        margin-right: 15px;
+    }
+    .rows:last-child{
+        margin-right: 0;
     }
 }

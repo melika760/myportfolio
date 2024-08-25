@@ -36,11 +36,26 @@ a:hover{
 .active{
     color: purple;
 }
-@media(max-width: 1000px){
+@media(max-width: 1024px){
     .navItems{
         font-size: 0.9rem;
     }
     .navItems:not(:last-child){
         margin-right: 1.5rem;
+    }
+}
+@media(max-width: 768px){
+    .navigationbar{
+        justify-content: center;
+      
+    }
+    .navItems{
+        font-size: 0.9rem;
+    }
+    .navItems:not(:last-child){
+        margin-right: 1.5rem;
+    }
+    .navItems:last-child{
+        margin-right: 0;
     }
 }

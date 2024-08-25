@@ -31,7 +31,6 @@ display: flex;
 position: relative;
 justify-content: flex-start;
 margin-bottom: 14rem;
-
 }
 .left{
     margin-left: 11rem;
@@ -44,7 +43,7 @@ margin-bottom: 14rem;
     
 }
 .pic,.pic2{
-    height:34rem;
+    height:44rem;
     width: 65rem;
     position: relative;
     background-color: #694F8E;
@@ -92,7 +91,7 @@ transform: scale(95%);
     width: fit-content;
     top:8rem;
     padding: 1rem;
-    z-index: 999;
+    z-index: 999999999;
     height: fit-content;
 
 }
@@ -101,17 +100,19 @@ transform: scale(95%);
     margin-right: -2rem;
 }
 .info2{
-    right: -12rem;
+    right: -9.7rem;
     margin-left: -2rem;
 }
 .title{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 500;
 }
-.description{
+.descriptions{
     margin-top: 3rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1;
+    width: 250px;
+    line-height: 1.3;
     font-family: 'Roboto';
 }
 
@@ -128,20 +129,20 @@ background-color: transparent;
 flex-direction: column;
 justify-content: center;
 letter-spacing: 3px;
-font-size: 1.2rem;
-padding: 1rem 0.8rem;
+font-size: 1rem;
+padding: 0.8rem 0.5rem;
 position: relative;
 line-height: 1;
 text-transform: uppercase;
 align-items: center;
-width: 13rem;
+width: 10rem;
 margin-bottom: 1.4rem;
 
 }
 .live1::after{
     content: "";
     position: absolute;
-   background-color:#E3A5C7;
+   background-color:rgb(227, 165, 199);
    transform-origin: bottom;
    bottom: 2px;
    height: 3px;
@@ -165,13 +166,15 @@ color: #1a1a1a;
         font-size: 1.7rem;
     }
 
-    .description {
-        font-size: 1.3rem;
+    .descriptions{
+        font-size: 1rem;
+        width: 240px;
+   
     }
 
     .pic,.pic2{
         height:30rem;
-        max-width: 35rem;
+        width: 40rem;
        
     }
     .left{
@@ -179,13 +182,13 @@ color: #1a1a1a;
     }
     .right{
         margin-right: 0rem;
+        
     }
     .image,.image2{
         height: 20rem;
     }
     .info,.info2{
         top:3rem;
-       
     
     }
     .live1{
@@ -195,13 +198,33 @@ color: #1a1a1a;
     left: 0;
     }
     .info{
-        left: -6.3rem;
+        left: -5.3rem;
+        margin-right: -2rem;
+    }
+    .info2{
+        right:-6.3rem;
+        margin-left: -2rem;
+    }
+}
+@media(max-width:768px){
+    .info,.info2{
+        background-color: rgba(0, 0, 0,0.25);
+        top: 3rem;
+        height: 23rem;
+    }
+    .info{
+        left: -7.3rem;
         margin-right: -2rem;
     }
     .info2{
         right:-9.3rem;
         margin-left: -2rem;
     }
+    .pic,.pic2{
+        height:30rem;
+        width: 40rem;
+        margin: 0;
+        padding: 0;
+       
+    }
 }
-
-

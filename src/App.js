@@ -22,11 +22,10 @@ function App() {
     
     <Hero/>
     <Nav/>
-<main>
+
   <About/>
   <Projects/>
   <Contact onConfirm={SendMessage}/>
-</main>
 <Footer/>
   </Context.Provider>
  
