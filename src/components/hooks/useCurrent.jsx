@@ -6,25 +6,37 @@ const useCurrent = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
+
+      let currentSection = 'home';
 
       sections.forEach((sec) => {
-        const offsetTop = sec.offsetTop;
-        const offsetBottom = offsetTop + sec.offsetHeight;
+        const sectionId = sec.getAttribute('id');
+        if (!sectionId) return;
+
+        const offsetTop = sec.offsetTop - 100; 
+        const offsetBottom = offsetTop + sec.offsetHeight + 100; 
 
         if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-          setSection(sec.getAttribute('id'));
+          currentSection = sectionId;
         }
       });
+
+
+      if (currentSection !== section) {
+        setSection(currentSection);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [section]);
 
-  return { section };
+  return { section, setSection };
 };
 
 export default useCurrent;

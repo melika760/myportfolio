@@ -96,7 +96,8 @@ color: #E3A5C7;
       }
     .description {
         font-size: 0.9rem;
-        width: 50%;
+        width: 100%;
+        text-align: center;
       }
     
       .inpt, .message {
