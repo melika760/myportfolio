@@ -79,6 +79,9 @@ color: #E3A5C7;
 .er{
     border-left: 2px solid #E3A5C7;
 }
+.e{
+  width: 25px;
+}
 @media(max-width: 1024px){
    
     .form{

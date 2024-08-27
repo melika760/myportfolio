@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Contact.module.css"
 import useInput from './hooks/useInput'
+import done from "../assets/done.svg"
 const Contact = (props) => {
   const[submited,setsubmited]=useState(false)
 const{
@@ -34,10 +35,13 @@ props.onConfirm({
   Email,
   Message
 })
+setsubmited(true)
 Namereset();
 Emailreset();
-Messagereset()
-setsubmited(true)
+Messagereset();
+setTimeout(()=>{
+  setsubmited(false)
+},1500)
   }
 
   return (
@@ -57,8 +61,7 @@ setsubmited(true)
     <textarea className={ `${styles.message} && ${MessageHasError?styles.er:""}`} placeholder='Message'value={Message} onChange={MessageChange} onBlur={MessageBlur}></textarea>
     {MessageHasError && <p className={styles.error}>Please enter your message.</p>}
   </label>
-  {submited && <p className={styles.error}>Your message is submited!</p>}
-  <button type='submit'className={styles.btn} disabled={!NameIsValid && !EmailIsValid && !MessageIsValid}>Submit</button>
+  <button type='submit'className={styles.btn} disabled={!NameIsValid && !EmailIsValid && !MessageIsValid}>{submited ? <img src={done} alt='donetag' className={styles.e}/>:"submit"}</button>
  </form>
  
   </section>
