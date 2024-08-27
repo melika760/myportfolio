@@ -6,7 +6,7 @@ import email from "../assets/mail.png"
 const Footer = () => {
   return (
   <footer className={styles.footer}>
-    <a href='/' alt="Home">
+    <a href='#home' alt="Home">
     <div className={styles.arrow}>
 <img src={arrow} alt='arrow'className={styles.svg}/>
     </div>
