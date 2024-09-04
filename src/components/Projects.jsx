@@ -33,12 +33,12 @@ const Projects = () => {
 <h3 className={styles.title}>Groccery Store</h3>
 <p className={styles.descriptions}>Full stack Groccery store  built with Nextjs,Tailwind CSS,Strapi</p>
 
-<a href='https://groceryshop-three.vercel.app/' target='__blank' alt="GroceryStore"><div className={styles.live1}>Live app</div></a>
+<a href='https://groccerystore.vercel.app/' target='__blank' alt="GroceryStore"><div className={styles.live1}>Live app</div></a>
 <a href='https://github.com/melika760/newNextJsProject' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
-          <a href='https://groceryshop-three.vercel.app/' alt="GroceryStore" target='__blank'>
+          <a href='https://groccerystore.vercel.app/' alt="GroceryStore" target='__blank'>
           <div className={styles.pic2}>
           <div className={styles.image2}>
             <img src={Grocery} alt='GrocceryStore'/>
