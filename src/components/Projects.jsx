@@ -4,6 +4,7 @@ import Dominique from "../assets/Dominiques.png"
 import Grocery from "../assets/GroceryStore.png"
 import Dictionary from "../assets/Dictionary.png"
 import Weatherapp from "../assets/Weatherapp.png"
+import melromin from "../assets/melromin.png"
 const Projects = () => {
 
   return (
@@ -47,20 +48,20 @@ const Projects = () => {
           </a>
         </div>
 <div className={`${styles.content} ${styles.left}`}>
-          <a href='https://musical-sorbet-7120c3.netlify.app/' alt="Dictionary" target='__blank'>
+          <a href='https://melrominglobalnetwork.co.uk/' alt="Melromin" target='__blank'>
           <div className={styles.pic}>
           <div className={styles.image}>
-            <img src={Dictionary} alt='Dictionary'/>
+            <img src={melromin} alt='Melromin'/>
           </div>
           </div>
           </a>
           
           <div className={styles.info}>
-<h3 className={styles.title}>Dictionary App</h3>
-<p className={styles.descriptions}>Full stack Dictionary website built with React and Axios</p>
+<h3 className={styles.title}>Melromin Global Network</h3>
+<p className={styles.descriptions}>Full stack Melromin global network website built with Nextjs,firebase and stripe.</p>
 
-<a href='https://musical-sorbet-7120c3.netlify.app/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
-<a href='https://github.com/melika760/Dictionary' target='__blank'><div className={styles.live1}>Learn more</div></a>
+<a href='https://melrominglobalnetwork.co.uk/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
+<a href='https://github.com/melika760/MelrominGlobalNetwork' target='__blank'><div className={styles.live1}>Learn more</div></a>
 
 
           </div>
@@ -83,7 +84,25 @@ const Projects = () => {
           </div>
           </a>
         </div>
-    
+        <div className={`${styles.content} ${styles.left}`}>
+          <a href='https://musical-sorbet-7120c3.netlify.app/' alt="Dictionary" target='__blank'>
+          <div className={styles.pic}>
+          <div className={styles.image}>
+            <img src={Dictionary} alt='Dictionary'/>
+          </div>
+          </div>
+          </a>
+          
+          <div className={styles.info}>
+<h3 className={styles.title}>Dictionary App</h3>
+<p className={styles.descriptions}>Full stack Dictionary website built with React and Axios</p>
+
+<a href='https://musical-sorbet-7120c3.netlify.app/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
+<a href='https://github.com/melika760/Dictionary' target='__blank'><div className={styles.live1}>Learn more</div></a>
+
+
+          </div>
+        </div>
     </section>
   )
 }
