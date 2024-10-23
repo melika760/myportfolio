@@ -58,7 +58,7 @@ const Projects = () => {
           
           <div className={styles.info}>
 <h3 className={styles.title}>Melromin Global Network</h3>
-<p className={styles.descriptions}>Full stack Melromin global network website built with Nextjs,firebase and stripe.</p>
+<p className={styles.descriptions}>Full-stack website built with Next.js, Firebase, and Stripe, featuring two admin panels for chat, contracts, and payments.</p>
 
 <a href='https://melrominglobalnetwork.co.uk/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
 <a href='https://github.com/melika760/MelrominGlobalNetwork' target='__blank'><div className={styles.live1}>Learn more</div></a>
