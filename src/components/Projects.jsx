@@ -5,6 +5,7 @@ import Grocery from "../assets/GroceryStore.png"
 import Dictionary from "../assets/Dictionary.png"
 import Weatherapp from "../assets/Weatherapp.png"
 import melromin from "../assets/melromin.png"
+import rock from "../assets/Rock.png"
 const Projects = () => {
 
   return (
@@ -102,6 +103,24 @@ const Projects = () => {
 
 
           </div>
+        </div>
+        <div className={`${styles.content} ${styles.right}`}>
+          <div className={styles.info2}>
+<h3 className={styles.title}>Game App</h3>
+<p className={styles.descriptions}>Rock,Paper,Scissors built with React and css module</p>
+
+<a href='https://rockpaperscissorsgaame.netlify.app/' target='__blank' alt="GameApp"><div className={styles.live1}>Live app</div></a>
+<a href='https://github.com/melika760/Game' target='__blank'><div className={styles.live1}>Learn more</div></a>
+
+
+          </div>
+          <a href='https://rockpaperscissorsgaame.netlify.app/' alt="Game" target='__blank'>
+          <div className={styles.pic2}>
+          <div className={styles.image2}>
+            <img src={rock} alt='Weatherapp'/>
+          </div>
+          </div>
+          </a>
         </div>
     </section>
   )
