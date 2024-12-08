@@ -43,11 +43,20 @@ export const contsants=[
     },
     {
         photo:Weatherapp,
-        id:"3",
-        name:"Melromin Global Network",
-        description:"Full-stack website built with Next.js, Firebase, and Stripe, featuring two admin panels for chat, contracts, and payments.",
+        id:"5",
+        name:"Weather App",
+        description:"Full stack Weather app built with React and Axios",
         space:"left",
-         live:"https://melrominglobalnetwork.co.uk/",
-        learn:"https://github.com/melika760/MelrominGlobalNetwork"
+         live:"https://fanciful-bublanina-8bd2c6.netlify.app/",
+        learn:"https://github.com/melika760/vanilla-weather-app"
     }, 
+    {
+        photo:Dictionary,
+        id:"6",
+        name:"Dictionary App",
+        description:"Full stack Dictionary website built with React and Axios",
+        space:"right",
+         live:"https://musical-sorbet-7120c3.netlify.app/",
+        learn:"https://github.com/melika760/Dictionary"
+    },
 ]
