@@ -12,7 +12,7 @@ const Projects = () => {
     <section id='Projects' className={styles.projects}>
       <h2 className={styles.head}>Projects</h2>
       
-        <LeftContent name={"Dominiques' Cafe"} space={"left"}/>
+        <LeftContent/>
         <div className={`${styles.content} ${styles.right}`}>
           <div className={styles.info2}>
 <h3 className={styles.title}>Groccery Store</h3>

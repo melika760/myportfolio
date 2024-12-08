@@ -9,6 +9,7 @@ export const contsants=[
         photo:DominiqueCafe,
         id:"1",
         name:"Dominiques' Cafe",
-        description:"Full stack resturant website built with React,CSS Module,React-router,Firebase"
+        description:"Full stack resturant website built with React,CSS Module,React-router,Firebase",
+        space:"left"
     }
 ]
