@@ -13,43 +13,8 @@ const Projects = () => {
       <h2 className={styles.head}>Projects</h2>
       
         <LeftContent/>
-        <div className={`${styles.content} ${styles.right}`}>
-          <div className={styles.info2}>
-<h3 className={styles.title}>Groccery Store</h3>
-<p className={styles.descriptions}>Full stack Groccery store  built with Nextjs,Tailwind CSS,Strapi</p>
+        
 
-<a href='https://groccerystore.vercel.app/' target='__blank' alt="GroceryStore"><div className={styles.live1}>Live app</div></a>
-<a href='https://github.com/melika760/newNextJsProject' target='__blank'><div className={styles.live1}>Learn more</div></a>
-
-
-          </div>
-          <a href='https://groccerystore.vercel.app/' alt="GroceryStore" target='__blank'>
-          <div className={styles.pic2}>
-          <div className={styles.image2}>
-            <img src={Grocery} alt='GrocceryStore'/>
-          </div>
-          </div>
-          </a>
-        </div>
-<div className={`${styles.content} ${styles.left}`}>
-          <a href='https://melrominglobalnetwork.co.uk/' alt="Melromin" target='__blank'>
-          <div className={styles.pic}>
-          <div className={styles.image}>
-            <img src={melromin} alt='Melromin'/>
-          </div>
-          </div>
-          </a>
-          
-          <div className={styles.info}>
-<h3 className={styles.title}>Melromin Global Network</h3>
-<p className={styles.descriptions}>Full-stack website built with Next.js, Firebase, and Stripe, featuring two admin panels for chat, contracts, and payments.</p>
-
-<a href='https://melrominglobalnetwork.co.uk/' target='__blank' alt="DictionaryApp"><div className={styles.live1}>Live app</div></a>
-<a href='https://github.com/melika760/MelrominGlobalNetwork' target='__blank'><div className={styles.live1}>Learn more</div></a>
-
-
-          </div>
-        </div>
         <div className={`${styles.content} ${styles.right}`}>
           <div className={styles.info2}>
 <h3 className={styles.title}>Weather App</h3>
