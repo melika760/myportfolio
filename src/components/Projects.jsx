@@ -1,35 +1,18 @@
 import React from 'react'
 import styles from "./Projects.module.css"
-import Dominique from "../assets/Dominiques.png"
 import Grocery from "../assets/GroceryStore.png"
 import Dictionary from "../assets/Dictionary.png"
 import Weatherapp from "../assets/Weatherapp.png"
 import melromin from "../assets/melromin.png"
 import rock from "../assets/Rock.png"
+import LeftContent from './LeftContent'
 const Projects = () => {
 
   return (
     <section id='Projects' className={styles.projects}>
       <h2 className={styles.head}>Projects</h2>
-        <div className={`${styles.content} ${styles.left}`}>
-          <a href='https://dominique-5aac4.web.app/' alt="Dominiques" target='__blank'>
-          <div className={styles.pic}>
-          <div className={styles.image}>
-            <img src={Dominique} alt='DominiqueCafe'/>
-          </div>
-          </div>
-          </a>
-          
-          <div className={styles.info}>
-<h3 className={styles.title}>Dominiques' Cafe</h3>
-<p className={styles.descriptions}>Full stack resturant website built with React,CSS Module,React-router,Firebase</p>
-
-<a href='https://dominique-5aac4.web.app/' target='__blank' alt="Domique's Cafe"><div className={styles.live1}>Live app</div></a>
-<a href='https://github.com/melika760/OrderCheck' target='__blank'><div className={styles.live1}>Learn more</div></a>
-
-
-          </div>
-        </div>
+      
+        <LeftContent name={"Dominiques' Cafe"} space={"left"}/>
         <div className={`${styles.content} ${styles.right}`}>
           <div className={styles.info2}>
 <h3 className={styles.title}>Groccery Store</h3>
