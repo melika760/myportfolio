@@ -4,6 +4,7 @@ import Dictionary from "../assets/Dictionary.png"
 import Weatherapp from "../assets/Weatherapp.png"
 import melromin from "../assets/melromin.png"
 import rock from "../assets/Rock.png"
+import space from "../assets/Space.png"
 export const contsants=[
     {
         photo:DominiqueCafe,
@@ -58,5 +59,14 @@ export const contsants=[
         space:"right",
          live:"https://musical-sorbet-7120c3.netlify.app/",
         learn:"https://github.com/melika760/Dictionary"
+    },
+    {
+        photo:space,
+        id:"7",
+        name:"Explore Space",
+        description:"Converted a pixel-perfect Figma design into a fully responsive website, ensuring seamless functionality across all devices..",
+        space:"left",
+         live:"https://explorespacesss.netlify.app/",
+        learn:"https://github.com/melika760/Space"
     },
 ]
