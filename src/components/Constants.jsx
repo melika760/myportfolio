@@ -18,7 +18,7 @@ export const contsants=[
     {
         photo:Grocery,
         id:"2",
-        name:"Dominiques' Cafe",
+        name:"Grocery Store",
         description:"Full stack resturant website built with React,CSS Module,React-router,Firebase",
         space:"right",
          live:"https://groccerystore.vercel.app/",
