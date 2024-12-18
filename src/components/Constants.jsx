@@ -30,7 +30,7 @@ export const contsants=[
         name:"Melromin Global Network",
         description:"Full-stack website built with Next.js, Firebase, and Stripe, featuring two admin panels for chat, contracts, and payments.",
         space:"left",
-         live:"https://melrominglobalnetwork.co.uk/",
+         live:"https://melromin.co.uk/",
         learn:"https://github.com/melika760/MelrominGlobalNetwork"
     },  
      {
