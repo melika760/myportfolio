@@ -42,24 +42,24 @@ export const contsants=[
          live:"https://rockpaperscissorsgaame.netlify.app/",
         learn:"https://github.com/melika760/Game"
     },
-    {
-        photo:Weatherapp,
-        id:"5",
-        name:"Weather App",
-        description:"Full stack Weather app built with React and Axios",
-        space:"left",
-         live:"https://fanciful-bublanina-8bd2c6.netlify.app/",
-        learn:"https://github.com/melika760/vanilla-weather-app"
-    }, 
-    {
-        photo:Dictionary,
-        id:"6",
-        name:"Dictionary App",
-        description:"Full stack Dictionary website built with React and Axios",
-        space:"right",
-         live:"https://musical-sorbet-7120c3.netlify.app/",
-        learn:"https://github.com/melika760/Dictionary"
-    },
+    // {
+    //     photo:Weatherapp,
+    //     id:"5",
+    //     name:"Weather App",
+    //     description:"Full stack Weather app built with React and Axios",
+    //     space:"left",
+    //      live:"https://fanciful-bublanina-8bd2c6.netlify.app/",
+    //     learn:"https://github.com/melika760/vanilla-weather-app"
+    // }, 
+    // {
+    //     photo:Dictionary,
+    //     id:"6",
+    //     name:"Dictionary App",
+    //     description:"Full stack Dictionary website built with React and Axios",
+    //     space:"right",
+    //      live:"https://musical-sorbet-7120c3.netlify.app/",
+    //     learn:"https://github.com/melika760/Dictionary"
+    // },
     {
         photo:space,
         id:"7",
