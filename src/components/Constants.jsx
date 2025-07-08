@@ -60,13 +60,13 @@ export const contsants=[
     //      live:"https://musical-sorbet-7120c3.netlify.app/",
     //     learn:"https://github.com/melika760/Dictionary"
     // },
-    {
-        photo:space,
-        id:"7",
-        name:"Explore Space",
-        description:"Converted a pixel-perfect Figma design into a fully responsive website, ensuring seamless functionality across all devices..",
-        space:"left",
-         live:"https://explorespacesss.netlify.app/",
-        learn:"https://github.com/melika760/Space"
-    },
+    // {
+    //     photo:space,
+    //     id:"7",
+    //     name:"Explore Space",
+    //     description:"Converted a pixel-perfect Figma design into a fully responsive website, ensuring seamless functionality across all devices..",
+    //     space:"left",
+    //      live:"https://explorespacesss.netlify.app/",
+    //     learn:"https://github.com/melika760/Space"
+    // },
 ]
