@@ -4,6 +4,7 @@ import Grocery from "../assets/GroceryStore.png"
 // import Weatherapp from "../assets/Weatherapp.png"
 import melromin from "../assets/melromin.png"
 import rock from "../assets/Rock.png"
+import memory from "../assets/memoryGame.png"
 // import space from "../assets/Space.png"
 export const contsants=[
     {
@@ -34,11 +35,20 @@ export const contsants=[
         learn:"https://github.com/melika760/MelrominGlobalNetwork"
     },  
      {
-        photo:rock,
+        photo:memory,
         id:"4",
+        name:"Memory Game App",
+        description:"Memory Game built with React and css module",
+        space:"right",
+         live:"https://memorygamess.netlify.app/",
+        learn:"https://github.com/melika760/memoryGame"
+    },
+        {
+        photo:rock,
+        id:"5",
         name:"Game App",
         description:"Rock,Paper,Scissors built with React and css module",
-        space:"right",
+        space:"left",
          live:"https://rockpaperscissorsgaame.netlify.app/",
         learn:"https://github.com/melika760/Game"
     },
