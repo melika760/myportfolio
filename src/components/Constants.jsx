@@ -4,7 +4,7 @@ import Grocery from "../assets/GroceryStore.png"
 // import Weatherapp from "../assets/Weatherapp.png"
 import melromin from "../assets/melromin.png"
 import rock from "../assets/Rock.png"
-import space from "../assets/Space.png"
+// import space from "../assets/Space.png"
 export const contsants=[
     {
         photo:DominiqueCafe,
